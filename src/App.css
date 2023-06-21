@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 15vmin;
   pointer-events: none;
 }
 
@@ -15,9 +15,8 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 15vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -35,4 +34,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.dice-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em auto;
+}
+
+.dice-child {
+  display: flex;
+  justify-content: center;
+  gap: 0.7em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  border-bottom: 2px solid black;
+  width: 11em;
+}
+.dice-child input {
+  width: 1.5em;
+}
+.dice-child .underlign {
+  text-decoration: underline double;
 }
